@@ -35,3 +35,4 @@ Every change starts with a spec in `specs/NNN-name/spec.md`.
 |---|---|
 | [001-factorial](specs/001-factorial/spec.md) | `factorial(n)` |
 | [002-fibonacci](specs/002-fibonacci/spec.md) | `fibonacci(n)` |
+| [003-fibonacci-validation](specs/003-fibonacci-validation/spec.md) | input validation |

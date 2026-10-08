@@ -16,6 +16,16 @@ class FibonacciTest(unittest.TestCase):
         self.assertEqual(fibonacci(78), 8944394323791464)
         self.assertEqual(fibonacci(100), 354224848179261915075)
 
+    def test_rejects_non_integers_with_type_error(self):
+        for value in (1.5, "3", None, True):
+            with self.subTest(value=value):
+                with self.assertRaises(TypeError):
+                    fibonacci(value)
+
+    def test_rejects_negative_with_value_error(self):
+        with self.assertRaises(ValueError):
+            fibonacci(-1)
+
 
 if __name__ == "__main__":
     unittest.main()

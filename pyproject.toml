@@ -1,0 +1,6 @@
+[project]
+name = "eval-platform-fibonacci-python"
+version = "1.0.0"
+description = "Small number utilities used as a fast, dependency-free fixture for the eval platform."
+requires-python = ">=3.10"
+dependencies = []

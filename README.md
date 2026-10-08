@@ -13,10 +13,11 @@ A twin repository, `eval-platform-fibonacci-node`, has the same history in Node.
 
 ```python
 from numkit.factorial import factorial
-from numkit.fibonacci import fibonacci
+from numkit.fibonacci import fibonacci, fibonacci_sequence
 
 factorial(5)  # 120
 fibonacci(10)  # 55
+fibonacci_sequence(5)  # [0, 1, 1, 2, 3]
 ```
 
 ## Tests
@@ -36,3 +37,4 @@ Every change starts with a spec in `specs/NNN-name/spec.md`.
 | [001-factorial](specs/001-factorial/spec.md) | `factorial(n)` |
 | [002-fibonacci](specs/002-fibonacci/spec.md) | `fibonacci(n)` |
 | [003-fibonacci-validation](specs/003-fibonacci-validation/spec.md) | input validation |
+| [004-fibonacci-sequence](specs/004-fibonacci-sequence/spec.md) | `fibonacci_sequence(count)` |
